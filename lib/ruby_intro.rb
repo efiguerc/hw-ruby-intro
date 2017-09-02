@@ -32,7 +32,10 @@ def hello(name)
 end
 
 def starts_with_consonant? s
-  # YOUR CODE HERE
+  ss = s.downcase
+  return false if ss.empty?
+  return false unless ss =~ /^[a-z]/
+  return true unless ss =~ /^[aeiou]/
 end
 
 def binary_multiple_of_4? s
