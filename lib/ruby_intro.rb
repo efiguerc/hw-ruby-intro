@@ -15,7 +15,14 @@ def max_2_sum arr
 end
 
 def sum_to_n? arr, n
-  # YOUR CODE HERE
+  return false if arr.empty? || arr.size == 1
+  (arr.size - 1).times do |i|
+    x = arr[i]
+    arr[(i+1)..-1].each do |y|
+      return true if (x + y) == n
+    end
+  end
+  false
 end
 
 # Part 2
