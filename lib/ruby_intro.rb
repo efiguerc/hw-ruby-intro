@@ -3,11 +3,15 @@
 # Part 1
 
 def sum arr
-  # YOUR CODE HERE
+  return 0 if arr.empty?
+  arr.inject(0,:+)
 end
 
 def max_2_sum arr
-  # YOUR CODE HERE
+  return 0 if arr.empty?
+  return arr[0] if arr.size == 1
+  sorted_arr = arr.sort
+  sorted_arr[-2] + sorted_arr[-1]
 end
 
 def sum_to_n? arr, n
