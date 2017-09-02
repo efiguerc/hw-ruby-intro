@@ -47,5 +47,10 @@ end
 # Part 3
 
 class BookInStock
-# YOUR CODE HERE
+  attr_accessor :isbn, :price
+  
+  def initialize(isbn, price)
+    self.isbn = isbn
+    self.price = price
+  end
 end
