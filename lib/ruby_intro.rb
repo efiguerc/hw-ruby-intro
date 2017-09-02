@@ -56,4 +56,8 @@ class BookInStock
     self.isbn = isbn
     self.price = price
   end
+  
+  def price_as_string
+    "$%.2f" % price
+  end
 end
